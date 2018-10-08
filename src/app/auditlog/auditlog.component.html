@@ -1,0 +1,32 @@
+<table border="1">
+  <thead>
+    <tr>
+      <th style="width: 8%;">No.</th>
+      <th style="width: 8%;">user_id</th>
+    <th style="width: 8%;">field_name</th>
+    <th style="width: 8%;">old_value</th>
+    <th style="width: 8%;">new_value</th>
+    <th style="width: 8%;">activity</th>
+    <th style="width: 8%;">modified</th>
+    <th style="width: 8%;">modified_by_user_id</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+    <tr *ngFor="let Country of CountryList;let i = index;">
+      <td style="width: 8%;">{{i+1}}</td>
+  
+      <td style="width: 8%;">{{Country.user_id}}</td>
+      <td style="width: 8%;">{{Country.field_name}}</td>
+      <td style="width: 8%;">{{Country.old_value}}</td>
+      <td style="width: 8%;">{{Country.new_value}}</td>
+      <td style="width: 8%;">{{Country.activity}}</td>
+      <td style="width: 8%;">{{Country.modified}}</td>
+      <td style="width: 8%;">{{Country.modified_by_user_id}}</td>
+    </tr>
+
+
+
+  </tbody>
+</table>
